@@ -14,15 +14,18 @@ import CustomUserButton from "./custom-user-button";
 const Logo = () => {
   return (
     <Link href="/" className="flex items-center gap-2 group">
-      <div className="size-8 rounded-lg bg-primary flex items-center justify-center">
+      {/* Icon → desktop only */}
+      <div className="hidden md:flex size-8 rounded-lg bg-primary items-center justify-center">
         <SparkleIcon className="size-4 text-primary-foreground" />
       </div>
+
       <span className="text-xl font-bold">
         project<span className="text-primary">Arena</span>
       </span>
     </Link>
   );
 };
+
 
 export default function Header() {
   return (
